@@ -1,0 +1,11 @@
+create table users
+(
+  id         int auto_increment
+    primary key,
+  username   varchar(255)                        not null,
+  password   varchar(255)                        null,
+  first_name varchar(255)                        null,
+  last_name  varchar(255)                        null,
+  born_on    timestamp default CURRENT_TIMESTAMP null on update CURRENT_TIMESTAMP
+)
+  charset = utf8;
