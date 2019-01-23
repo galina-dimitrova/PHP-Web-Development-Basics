@@ -35,6 +35,7 @@ class TaskService implements TaskServiceInterface
     {
        $task = $this->taskRepository->findOne($id);
 
+
        if($task === null){
            throw new \Exception("Task not exist!");
        }
